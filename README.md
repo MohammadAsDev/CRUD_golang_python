@@ -1,6 +1,6 @@
 # CRUD API Benchmarks (Python vs. Golang)
+***
 
-============================================
 I've just created a simple CRUD API with golang and python,
 so i can make some tests to show the performance for each language.
 
@@ -29,21 +29,16 @@ and after running `test_api.py` that generates a number of objects and test the 
 Note: if you see something wrong please tell me, at the end of the day, i am not an expert.
 
 ### Golang  (1.21.1V linux/amd64)
-
-=================================
+---------------------------------------
 
 For only one operation:
 
 |   Operation   |   Time    |
 |---------------|-----------|
 |   `CREATE`    |    8ms    |
-|---------------|-----------|
 |   `READ`      |    7ms    |
-|---------------|-----------|
 |   `UPDATE`    |    12ms   |
-|---------------|-----------|
 |   `DELETE`    |    9ms    |
-|---------------|-----------|
 |   `LIST`      |    3ms    |
 
 For one thousand operation:
@@ -51,18 +46,14 @@ For one thousand operation:
 |   Operation   |   Time    |
 |---------------|-----------|
 |   `CREATE`    |   3.165s  |
-|---------------|-----------|
 |   `READ`      |   1.6s    |
-|---------------|-----------|
 |   `UPDATE`    |  3.336s   |
-|---------------|-----------|
 |   `DELETE`    |   3.305s  |
-|---------------|-----------|
 |   `LIST`      |   7.8ms   |
 
 ### Python (3.9.2V)
 
-=================================
+---------------------------------------
 
 For only one operation:
 
